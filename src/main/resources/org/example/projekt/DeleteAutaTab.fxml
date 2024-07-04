@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="445.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.projekt.DeleteAutaTabController">
+
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+        <children>
+            <TableView fx:id="tableAuta" prefHeight="362.0" prefWidth="600.0">
+                <columns>
+                    <TableColumn fx:id="idAuta" prefWidth="42.0" text="ID" />
+                    <TableColumn fx:id="idAutaMechanicy" prefWidth="84.0" text="ID Mechanika" />
+                    <TableColumn fx:id="makeAuta" prefWidth="77.0" text="Marka" />
+                    <TableColumn fx:id="modelAuta" prefWidth="79.0" text="Model" />
+                    <TableColumn fx:id="engineAuta" prefWidth="83.0" text="Typ silnika" />
+                    <TableColumn fx:id="manufactureAuta" prefWidth="85.0" text="Rok produkcji" />
+                    <TableColumn fx:id="faultAuta" prefWidth="149.0" text="Opis usterki" />
+                </columns>
+            </TableView>
+            <Button layoutY="362.0" mnemonicParsing="false" onMouseClicked="#goToDeleteCar" prefHeight="84.0" prefWidth="600.0" text="USUŃ AUTO">
+                <font>
+                    <Font size="22.0" />
+                </font>
+            </Button>
+        </children>
+
+    </AnchorPane>
+
+</AnchorPane>

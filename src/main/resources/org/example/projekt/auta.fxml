@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.projekt.HelloController">
+   <bottom>
+      <TabPane prefHeight="466.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="TOP_CENTER">
+         <tabs>
+            <Tab text="Dodaj pojazd">
+               <content>
+                  <fx:include source="AddAutaTab.fxml" />
+               </content>
+            </Tab>
+            <Tab text="Edytuj pojazd">
+               <content>
+                  <fx:include source="EditAutaTab.fxml" />
+               </content>
+            </Tab>
+            <Tab text="Usuń pojazd">
+               <content>
+                  <fx:include source="DeleteAutaTab.fxml" />
+               </content>
+            </Tab>
+            <Tab text="Wyświetl pojazd">
+               <content>
+                  <fx:include source="ShowAutaTab.fxml" />
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </bottom>
+   <top>
+      <Button mnemonicParsing="false" onAction="#goToMain" prefHeight="84.0" prefWidth="620.0" text="Powrót" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Button>
+   </top>
+</BorderPane>
